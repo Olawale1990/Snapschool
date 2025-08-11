@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script src="jquery.min.js"></script>
+        <script src="ola.js"></script>
+    </head>
+    <body>
+        
+        <table border="1" bordercolor="red">
+            <tr>
+                <caption>ENTER YOUR INFORMATION</caption>
+                <th>NAME</th>
+                <th>PHONE NUMBER</th>
+            </tr>
+            <tr>
+                <td>Olawale</td>
+                <td>08165557636</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Olawale</td>
+                <td>08165557636</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Olawale</td>
+                <td>08165557636</td>
+                </tr>
+                <tr>
+                    <td>Olawale</td>
+                    <td>08165557636</td>
+                </tr>
+                
+            </tr>
+        </table>
+        
+        <form action="" method="post">
+            <fieldset style="background-color: navajowhite;">
+                <legend>Enter your Info:</legend>
+                <label class="boy">FIRSTNAME:</label><input type ="text" placeholder="firstname" id="fname" max="30"/> <br>
+                <label class="boy">LASTNAME:</label><input type ="text" placeholder="lastname" id="lname" max="30"/> <br>
+                <button onclick = "myDisplay()"> submit </button>
+                
+            <script>
+                
+                
+
+            function myDisplay() {
+
+                var firstname = document.getElementById('fname').value;
+                var lastname = document.getElementById('lname').value;
+                var name = firstname + '  ' + lastname;
+                alert("Welcome" + ' '+ name);
+                document.write("Welcome" + ' '+ name)
+               return myDisplay();
+            }
+           
+            </script>
+            </fieldset>
+        </form>
+
+        <style>
+            .boy {
+                color:#fff;
+            }
+            </style>
+
+
+        <form action="" method="post">
+            <fieldset style="background-color: khaki;">
+                <legend>Enter your Info:</legend>
+                <label class="boy">FIRSTNAME:</label><input type ="text" placeholder="firstname" id="fname" max="30"/> <br>
+                <label class="boy">LASTNAME:</label><input type ="text" placeholder="lastname" id="lname" max="30"/> <br>
+                <label class="boy">AGE:</label><input type="text" placeholder="ages" id="good" /> <br>
+                <input type="button" onclick = "myDisplay()" value="submit">
+                
+            <script>
+            
+
+                 
+                let age = 20;
+
+            function myDisplay() {
+                var firstname = document.getElementById('fname').value;
+                var lastname = document.getElementById('lname').value;
+               var name = firstname + '  ' + lastname;
+                var age = document.getElementById('good').value;
+             // let age = 20;
+                if(age <= 20){
+                    alert("Mr/Mrs" + name + ' ' + "your age is" +' ' + age +' ' + " you are a teneager");
+                    document.write("Mr/Mrs" + name + ' ' + "your age is" +' ' + age +' ' +" you are a teneager");
+                }
+                else if (age > 20 && age <= 30) {
+                    alert("Mr/Mrs" + name + ' ' + "your age is" +' ' + age +' ' + " you are a youth");
+                    document.write("Mr/Mrs" + name + ' ' + "your age is" +' ' + age +' '  + " you are a youth");
+                }
+
+                else if (age > 30 && age <= 50) {
+                    alert("Mr/Mrs" + name + ' ' + "your age is" +' ' + age +' '  + " you are an adult");
+                    document.write("Mr/Mrs" + name + ' ' + "your age is" +' ' + age +' '  + " you are an adult");
+                }
+
+                else {
+                    alert("Mr/Mrs" + name + ' ' + "your age is" +' ' + age +' ' + " you are old");
+                    document.write("Mr/Mrs" + name + ' ' + "your age is" +' ' + age +' '  + " you are old");
+                }
+               
+            }
+           
+            </script>
+            </fieldset>
+        </form>
+
+        <style>
+            .boy {
+                color:#fff;
+            }
+            </style>
+
+
+        <form action="" method="post">
+            <fieldset style="background-color: khaki;">
+                <legend>Enter your Info:</legend>
+                <label class="boy">NAME:</label><input type ="text" placeholder="Enter your name" id="demo" max="30"/> <br>
+                <label class="boy">AGE:</label><input type="text" placeholder="ages" id="good" /> <br>
+                <input type="button" onclick = "myDisp()" value="submit">
+                
+            <script>
+            
+
+           
+           
+           
+               
+
+            function myDisp() {
+               
+                var name = document.getElementById('demo').value;
+                var age = document.getElementById('good').value;
+              //  let age = 20;
+                if(age <= 20){
+                    alert("Mr/Mrs" + ' '+name + ' ' + "your age is" +' ' + age +' ' + " you are a teneager");
+                    document.write("Mr/Mrs" +' ' + name + ' ' + "your age is" +' ' + age +' ' +" you are a teneager");
+                }
+                else if (age > 20 && age <= 30) {
+                    alert("Mr/Mrs"+ ' ' + name + ' ' + "your age is" +' ' + age +' ' + " you are a youth");
+                    document.write("Mr/Mrs"+' ' + name + ' ' + "your age is" +' ' + age +' '  + " you are a youth");
+                }
+
+                else if (age > 30 && age <= 50) {
+                    alert("Mr/Mrs" +' '+ name + ' ' + "your age is" +' ' + age +' '  + " you are an adult");
+                    document.write("Mr/Mrs"+'  ' + name + ' ' + "your age is" +' ' + age +' '  + " you are an adult");
+                }
+
+                else {
+                    alert("Mr/Mrs"+ ' ' + name + ' ' + "your age is" +' ' + age +' ' + " you are old");
+                    document.write("Mr/Mrs"+ ' ' + name + ' ' + "your age is" +' ' + age +' '  + " you are old");
+                }
+               return myDisp();
+            }
+           
+            </script>
+            </fieldset>
+        </form>
+    </body>
+</html>

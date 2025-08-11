@@ -1,0 +1,31 @@
+
+      <script>
+        const a =prompt("Enter the value of a:");
+        const  b = prompt("Enter the value of b:");
+    
+        const  c = prompt("Enter the value of c:");
+    
+        const  d = b * b - 4 *a * c;
+         let root1 , root2 ;
+         if(d > 0){
+         root1 =  -b + (Math.sqrt(d))/(2 * a);
+    
+          root2 = -b- (Math.sqrt(d))/(2 * a);
+
+          console.log("The roots are ${root1} & ${root2}");
+          alert(root1);
+    
+         alert(root2);
+         }
+
+         if(d==0){
+
+         root1 = root2 - b/(2*a);
+         }
+         console.log("The roots are ${root1} & ${root2}");
+         alert(root1);
+    
+         alert(root2);
+         
+    </script>
+          

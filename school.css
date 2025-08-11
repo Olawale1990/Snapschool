@@ -1,0 +1,11 @@
+.collapse navbar-collapse {
+    background-color: brown;
+}
+
+body {
+    background-color:red;
+}
+.nav navbar-nav {
+    background-color:red;
+    color:red;
+}
